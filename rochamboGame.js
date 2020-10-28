@@ -9,13 +9,15 @@ let machineChoice = Math.random();
 
 if (machineChoice < 0.33){
   machineChoice = 'scissors';
-} else if (machineChoice <= 0.67 ){
+  } else if (machineChoice <= 0.67 ){
   machineChoice = 'rock';
-} else {
+  } else {
   machineChoice = 'paper'
-}
+  }
 
 rl.question('Select: rock, paper, or scissors \n', (myChoice) => {
+  console.log(`You selected ${myChoice}`)
+  console.log(`computer selects ${machineChoice}`)
   if(myChoice === machineChoice){
     console.log('Tie, Choose again')
   }  
@@ -46,5 +48,7 @@ rl.question('Select: rock, paper, or scissors \n', (myChoice) => {
   
   rl.close();
 });
+
+
 
 
