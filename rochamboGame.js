@@ -15,7 +15,7 @@ if (machineChoice < 0.33){
   machineChoice = 'paper'
   }
 
-rl.question('Select: rock, paper, or scissors \n', (myChoice) => {
+rl.question('Select: rock, paper, or scissors: ', (myChoice) => {
   console.log(`\nYou selected ${myChoice}`)
   console.log(`computer selects ${machineChoice}\n`)
 
