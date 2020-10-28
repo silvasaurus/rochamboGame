@@ -16,8 +16,9 @@ if (machineChoice < 0.33){
   }
 
 rl.question('Select: rock, paper, or scissors \n', (myChoice) => {
-  console.log(`You selected ${myChoice}`)
-  console.log(`computer selects ${machineChoice}`)
+  console.log(`\nYou selected ${myChoice}`)
+  console.log(`computer selects ${machineChoice}\n`)
+
   if(myChoice === machineChoice){
     console.log('Tie, Choose again')
   }  
